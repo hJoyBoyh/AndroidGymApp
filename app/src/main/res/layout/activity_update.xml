@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+
+    tools:context=".UpdateActivity">
+
+    <TextView
+        android:id="@+id/labelTitre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Titre" />
+
+    <EditText
+        android:id="@+id/txtTitreUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:maxLines="1"
+        tools:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/labelDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description" />
+
+    <EditText
+        android:id="@+id/txtDescriptionUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:maxLines="1"
+        tools:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/labelMuscle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Muscle solicités (optionnel)" />
+
+    <EditText
+        android:id="@+id/txtMuscleUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:maxLines="1"
+        tools:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/labelExectution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exécution de l'exercice (optionnel)" />
+
+    <EditText
+        android:id="@+id/txtExecutionUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:maxLines="1"
+        tools:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/labelLien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lien Youtube" />
+
+    <EditText
+        android:id="@+id/txtLienUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:maxLines="1"
+        tools:layout_marginBottom="10dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupUpdate"
+        android:layout_width="213dp"
+
+        android:layout_height="207dp"
+        android:layout_marginTop="52dp">
+
+        <RadioButton
+            android:id="@+id/rbtnBicepsUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:text="Biceps" />
+
+        <RadioButton
+            android:id="@+id/rbtnTricepsUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:text="Triceps" />
+
+        <RadioButton
+            android:id="@+id/rbtnDosUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:text="Dos" />
+
+        <RadioButton
+            android:id="@+id/rbtnEpaulesUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:text="Epaules" />
+
+        <RadioButton
+            android:id="@+id/rbtnQuadricepsUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:text="Quadriceps" />
+
+        <RadioButton
+            android:id="@+id/rbtnCuissesUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:text="Cuisses" />
+
+        <RadioButton
+            android:id="@+id/rbtnIschiosUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:text="Ischios" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnUpdateExercice"
+        android:layout_width="248dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="36dp"
+        android:text="Update" />
+
+</LinearLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ExerciceChoisiActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30px">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:stretchColumns="1">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:id="@+id/descriptionHolder"
+                        android:layout_width="300dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="Description" />
+
+                    <ImageView
+                        android:id="@+id/btnDisplaytxtDescription"
+                        android:layout_width="106dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+
+                        app:srcCompat="@android:drawable/arrow_down_float" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtDescriptionExercice"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="TextView"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </ScrollView>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30px">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:stretchColumns="1">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/muscleHolder"
+                        android:layout_width="300dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="Muscle Solicités" />
+
+                    <ImageView
+                        android:id="@+id/btnDisplaytxtMuscle"
+                        android:layout_width="106dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+
+                        app:srcCompat="@android:drawable/arrow_down_float" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowMuscle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtMuscleExercice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="TextView"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </ScrollView>
+
+                </TableRow>
+
+            </TableLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewExecution"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30px">
+
+            <TableLayout
+                android:id="@+id/tableLayoutExecution"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:stretchColumns="1">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:id="@+id/executionHolder"
+                        android:layout_width="300dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="Execution de l'exercice" />
+
+                    <ImageView
+                        android:id="@+id/btnDisplaytxtExecution"
+                        android:layout_width="106dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+
+                        app:srcCompat="@android:drawable/arrow_down_float" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowExecution"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtExecutionExercice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </ScrollView>
+                </TableRow>
+
+            </TableLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
